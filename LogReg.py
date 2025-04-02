@@ -33,7 +33,7 @@ class Logistic_Regression:
 
     ''' define gradient_descent with 2 parameter, this function reduce weight and bias 
         in every iteration, counting log-loss as cost or loss in X training, by reducing 
-        w and b loss with less than before. 
+        w and b loss will less than before. 
     '''
     def gradient_descent(self, X_train, y_train):
         X_train = X_train.reshape(-1, 1) if X_train.ndim == 1 else X_train
